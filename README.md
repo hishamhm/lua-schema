@@ -310,6 +310,16 @@ The following schemata are built into the package (sorted alphabetically):
       -- Invalid value: '<val>' must match pattern '[A-Za-z_][A-Za-z0-9_]*'
       print(schema.CheckSchema(negExample, exampleSchema))
 
+* **PositiveNumber**
+
+  Matches all positive numbers (i.e, number > 0). Example:
+
+      local posExample = 42.3
+
+      local negExample = -14
+      -- Invalid value: '<val>' must be >= 0
+      print(schema.CheckSchema(negExample, schema.PositiveNumber))
+
 * **Record(tableSchema, additionalValues = false)**
   
   Takes a table schema. The table schema consists of keys (strings only) and 
