@@ -1,7 +1,8 @@
 package = "lua-schema"
 version = "scm-1"
 source = {
-   url = "git://github.com/sschoener/lua-schema"
+   url = "git://github.com/hishamhm/lua-schema",
+   branch = "features",
 }
 description = {
    summary = "A simple package to check Lua-data against schemata.",
